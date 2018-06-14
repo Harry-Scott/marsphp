@@ -1,0 +1,176 @@
+/* The css for the site, sets layout and styles. Mostly unchanged from the supplide code, although new additions have be handled in places e.g. loginform,  etc. */
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+body
+{
+    /* changes to font size here affects all other fonts below */
+    font-size: 13pt;
+    font-family: 'Jura', sans-serif;
+
+    /* sticks the image to the upper right of the page */
+    background-image: url("img/mars.jpg");
+    background-position: top right;
+    background-repeat: no-repeat; 
+    background-attachment:fixed;
+    
+    background-color: #000000;
+    color: #FFEEAA;
+
+	position: relative;
+}
+
+#container
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+#main
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+#titlebar
+{
+    width: 80%;
+}
+
+#username
+{
+    width: 300px;
+    font-size: 20pt;
+    font-family: 'Jura', 'sans-serif';
+    position: absolute;
+    top: 17;
+    right: 100;
+}
+
+#title
+{
+    width: 300px;
+    font-size: 20pt;
+    font-family: 'Jura', 'sans-serif';
+}
+
+#forgotpwd
+{
+    margin-left: 10px;
+}
+
+#loginform
+{
+    float:right;
+    margin-left: 50px;
+}
+
+#picturenav
+{
+    width: 800px;
+}
+
+header
+{
+    background-image: url("img/stony.jpg");
+    background-color: darkred;
+    font-size: 2em;
+    padding: 0.5em;
+    padding-left: 10%;
+}
+
+/* Footer sticks at the bottom of the page */
+footer
+{
+	font-size: 0.8em;
+    background-color: darkred;
+    background-image: url("img/stony.jpg");
+    
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -4em;
+    
+    padding: 0.5em;
+    padding-left: 10%;
+}
+
+section
+{
+
+}
+
+section table
+{
+    padding: 1em;
+    border-radius: 5px;
+    background-color: darkred;
+}
+
+section table td
+{
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+section table th
+{
+    text-align: left;
+    padding: 0.25em;
+}
+
+section form input
+{
+    font-family: inherit;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: darkred;
+    color: #FFEEAA;
+    padding: 0.25em;
+    border: 1;
+    border-width: thin;
+    border-color: #FFEEAA;
+}
+
+figure
+{
+	font-size: 0.8em;
+    float: left;
+    width: 40%;
+}
+
+nav
+{
+    width: 45%;
+    font-size: 1.25em;
+    float: right;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 1em;
+    list-style: none;
+}
+nav li
+{
+    margin: 0em;
+    padding: 1em;
+}
+
+a, a:visited
+{
+	color: #E0C080;
+	text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: none;
+    font-style: italic;
+}

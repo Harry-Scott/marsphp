@@ -1,0 +1,76 @@
+<!doctype html/>
+<!-- Home page, features the login form and navigation to the other main pages.  -->
+<html>
+    <head>
+        <title>Mars Pioneer: Application System</title>
+        <meta name="description" content="Mars Pioneer: Application System, portfolio of work">
+        <meta name="keywords" content="Mars Pioneer EFREI">
+        <meta name="author" content="H.Scott">
+        <link rel="stylesheet" type="text/css" href="mars.css" media="screen">
+        <link rel="icon" type="image/ico" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                Mars Pioneer
+            </header>
+
+            <!-- The login form, information is retrieved by mars-login.php, also includes the logout script, logout is dealt with by mars-logout.php -->
+            <div id="main">
+                <div id="loginform"
+                     name="loginformparent">
+                    <form action="mars-login.php" name="login" method="post">
+                        <p><input type="text" name="usr" placeholder="Email" required></p>
+                        <p><input type="password" name="pwd" placeholder="Password" required></p>
+                        <p><input type="submit" name="submit" value="Submit"></p>
+                    </form>
+
+                    <div name="logout"
+                         id="logoutandpassword">
+                        <a href="mars-logout.php">Log Out</a>
+                    </div>
+                </div>
+                
+                <!-- Some placeholder text and information regarding some of the users in the database-->
+                <section>
+                    <p>The Database is already populated with several users. These user accounts can be logged into by using their email and password. </p> 
+                    <p>Some examples of users are:</p>
+                    <p>deckardcain@email.com</p>
+                    <p>trevorfraser@email.com</p>
+                    <p>kencheng@email.com</p>
+                    <p>All passwords are Password15</p>
+                    
+                    <p>Post titulo de duo, maximo durante linguistic se sed. Maximo involvite un pro. Duce libere unidirectional web da. Africa debitas ascoltar non ha, duo in moderne populos concretisation, un web malo commun.</p>
+                    
+                    <p>Sed ei quot aliquando. Sit no nemore principes. Graeco tacimates ea mei, id eam nulla corpora delectus, eam habeo altera persecuti eu. Bonorum nominavi mnesarchum ea vis, ius eirmod aliquip quaerendum ei. Qui pericula incorrupte an, eos harum euismod urbanitas ea. In sed probo perpetua.</p>
+
+                    <p>[<a href="http://generator.lorem-ipsum.info/">"Lorem Ipsum" generated in Interlingua</a>]</p>
+                </section>
+                
+                <div id="picturenav">
+                    <figure>
+                        <a href="http://www.nasa.gov/centers/glenn/multimedia/artgallery/art_feature_004_C91-8781.html"><img src="img/mars-base.jpg" width="341" height="256">
+                        <figcaption>Mars Base - NASA Glenn Research artwork</figcaption>
+                        </a>
+                    </figure>
+
+                    <!-- The navigation for the rest of the site -->
+                    <nav>
+                        <ul>
+                            <li><a href="mars-apply.htm">Apply</a> for a place</li>
+                            <li><a href="mars-show.php">Show</a> who has applied</li>
+                            <li><a href="mars-remove.php">Remove</a> your application</li>
+                            <li><a href="mars-update.php">Update</a> your application</li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            Disclaimer: Space travel may be extremely hazardous to your health.
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<!-- page to allows users to create an application -->
+<html>
+    <head>
+        <title>Mars Pioneer: Application System</title>
+        <meta name="description" content="Mars Pioneer: Application System, portfolio of work">
+        <meta name="keywords" content="Mars Pioneer EFREI">
+        <meta name="author" content="H.Scott">
+        <link rel="stylesheet" type="text/css" href="mars.css" media="screen">
+        <link rel="icon" type="image/ico" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container">
+            <header><a href="mars.htm">Mars Pioneer: Apply</a></header>
+
+            <!-- application form, users need to enter forename, surname, email, password, country, can select up to 3 skills, some can be left blank if they choose to do so. -->
+            <div id="main">
+                <section>
+                    <p>Please enter your details:
+                    </p>
+                    <form action="mars-apply.php" method="post">
+                        <p><input type="text" value="" name="applicantforename" placeholder="Forename" required></p>
+                        <p><input type="text" value="" name="applicantsurname" placeholder="Surname" required></p>
+                        <p><input type="text" value="" name="applicantemail" placeholder="Email" required></p>
+                        <p><input type="password" value="" name="applicantpassword" placeholder= "Password" required></p>
+
+                        <p><label name="lblCountry" type="text">Country:</label>
+                        <select name="applicantcountry">
+                            <option value="1">Afghanistan</option>
+                            <option value="3">Albania</option>
+                            <option value="4">Algeria</option>
+                            <option value="5">Andorra</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Argentina</option>
+                            <option value="8">Armenia</option>
+                            <option value="10">Belgium</option>
+                            <option value="11">Bolivia</option>
+                            <option value="12">Botswana</option>
+                            <option value="13">Brazil</option>
+                            <option value="14">Bulgaria</option>
+                            <option value="15">Chile</option>
+                            <option value="16">China</option>
+                            <option value="17">Colombia</option>
+                            <option value="18">Croatia</option>
+                            <option value="19">Denmark</option>
+                            <option value="20">Dominican Republic</option>
+                            <option value="21">Egypt</option>
+                            <option value="22">Finland</option>
+                            <option value="23">France</option>
+                            <option value="24">Gambia</option>
+                            <option value="25">Haiti</option>
+                            <option value="26">India</option>
+                            <option value="27">Itay</option>
+                            <option value="28">Japan</option>
+                            <option value="29">Kenya</option>
+                            <option value="30">Lebanon</option>
+                            <option value="31">Madagascar</option>
+                            <option value="32">Nepal</option>
+                            <option value="33">Nigeria</option>
+                            <option value="34">Oman</option>
+                            <option value="35">Pakistan</option>
+                            <option value="36">Qatar</option>
+                            <option value="37">Russian Federation</option>
+                            <option value="38">Singapore</option>
+                            <option value="39">Sri Lanka</option>
+                            <option value="40">Turkey</option>
+                            <option value="41">Ukraine</option>
+                            <option value="42">United Kingdom</option>
+                            <option value="43">Vietnam</option>
+                            <option value="44">Western Sahara</option>
+                            <option value="45">Yemen</option>
+                            <option value="46">Zimbabwe</option>
+                            </select></p>
+
+                        <p><label name="lblSkills" type="text">Primary Skill:</label>
+                        <select name="primaryskill">
+                            <option value="0">none</option>
+                            <option value="1">Administrative Worker</option>
+                            <option value="2">Advertising Manager</option>
+                            <option value="3">Baker</option>
+                            <option value="4">Beekeeper</option>
+                            <option value="5">Biochemist</option>
+                            <option value="6">Chemical Industries Operator</option>
+                            <option value="7">Cartographer</option>
+                            <option value="8">Dental Technician</option>
+                            <option value="9">Director</option>
+                            <option value="10">Electrical Engineer</option>
+                            <option value="11">Financial Officer</option>
+                            <option value="12">Geologist</option>
+                            <option value="13">Geophysicist</option>
+                            <option value="14">Hydrologist</option>
+                            <option value="15">Land Surveyor</option>
+                            <option value="16">Physicist</option>
+                            <option value="17">Production Line Engineer</option>
+                            </select></p>
+
+                        <p><label name="lblSkills2" type="text">Secondary Skill:</label>
+                        <select name="secondaryskill">
+                            <option value="0">none</option>
+                            <option value="1">Administrative Worker</option>
+                            <option value="2">Advertising Manager</option>
+                            <option value="3">Baker</option>
+                            <option value="4">Beekeeper</option>
+                            <option value="5">Biochemist</option>
+                            <option value="6">Chemical Industries Operator</option>
+                            <option value="7">Cartographer</option>
+                            <option value="8">Dental Technician</option>
+                            <option value="9">Director</option>
+                            <option value="10">Electrical Engineer</option>
+                            <option value="11">Financial Officer</option>
+                            <option value="12">Geologist</option>
+                            <option value="13">Geophysicist</option>
+                            <option value="14">Hydrologist</option>
+                            <option value="15">Land Surveyor</option>
+                            <option value="16">Physicist</option>
+                            <option value="17">Production Line Engineer</option>
+                            </select></p>
+
+                        <p><label name="lblSkills3" type="text">Tertiary Skill:</label>
+                        <select name="tertiaryskill">
+                            <option value="0">none</option>
+                            <option value="1">Administrative Worker</option>
+                            <option value="2">Advertising Manager</option>
+                            <option value="3">Baker</option>
+                            <option value="4">Beekeeper</option>
+                            <option value="5">Biochemist</option>
+                            <option value="6">Chemical Industries Operator</option>
+                            <option value="7">Cartographer</option>
+                            <option value="8">Dental Technician</option>
+                            <option value="9">Director</option>
+                            <option value="10">Electrical Engineer</option>
+                            <option value="11">Financial Officer</option>
+                            <option value="12">Geologist</option>
+                            <option value="13">Geophysicist</option>
+                            <option value="14">Hydrologist</option>
+                            <option value="15">Land Surveyor</option>
+                            <option value="16">Physicist</option>
+                            <option value="17">Production Line Engineer</option>
+                            </select></p>
+
+                        <p><input type="submit" name="submit" value="Submit"/></p>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <footer>
+            Disclaimer: Space travel may be extremely hazardous to your health.
+        </footer>
+    </body>
+</html>
